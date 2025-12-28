@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .main {
+        background-color: rgb(236, 222, 222);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 310px;
+        height: 400px;
+        margin: 50px auto;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px black;
+        text-align: center;
+        transition-duration: 1.2s;
+      }
+      #blue-box {
+        background-color: blue;
+        height: 110px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      #white-box {
+        padding-bottom: 50px;
+      }
+      i {
+        cursor: pointer;
+        margin-left: 15px;
+      }
+      .sub {
+        border: none;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 6px 18px;
+        font-size: 14px;
+        transition-duration: 1.2s;
+      }
+      .sub:hover {
+        transform: scale(1.1);
+        box-shadow: 1px 2px 15px black;
+        background-color: rgb(254, 253, 255);
+        color: blueviolet;
+      }
+      #face {
+        color: #1877F2;
+        font-size: 23px;
+        opacity: 0.9;
+      }
+      #twitter {
+        color: #1DA1F2;
+        font-size: 23px;
+        opacity: 0.9;
+      }
+      #insta {
+        color: #8f7b0d;
+        font-size: 23px;
+        opacity: 0.9;
+      }
+      #yt {
+        color: #ff1010;
+        font-size: 23px;
+        opacity: 0.9;
+      }
+      #face:hover,
+      #twitter:hover,
+      #insta:hover,
+      #yt:hover {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+
+      #sarkar {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+      }
+      #profession {
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .Profile-card-logo {
+        width: 135px;
+        height: 140px;
+        border-radius: 50%;
+        border: 2px solid rgb(32, 34, 117);
+        margin-top: -89px;
+        background-color: rgb(255, 255, 255);
+      }
+      .main:hover {
+        transform: scale(1.1);
+        box-shadow: 1px 2px 15px black;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .stats span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-top: 8px;
+      }
+
+      .divider {
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div id="blue-box">.</div>
+      <img class="Profile-card-logo" src="Profile-card-logo.jpg" alt="" />
+      <div id="white-box">
+        <h2 id="sarkar">SarkarCoding</h2>
+        <p id="profession">Game devloper & Businessman</p>
+        <i id="face" class="fa-brands fa-facebook"></i>
+        <i id="twitter" class="fa-brands fa-square-twitter"></i>
+        <i id="insta" class="fa-brands fa-instagram"></i>
+        <i id="yt" class="fa-brands fa-youtube"></i>
+        <div>
+          <button class="sub">Subscribe</button>
+          <button class="sub">Message</button>
+        </div>
+        <div class="stats">
+          <span><i class="fa-regular fa-heart"></i> 60k</span>
+          <span class="divider">|</span>
+          <span><i class="fa-regular fa-comment"></i> 20k</span>
+          <span class="divider">|</span>
+          <span><i class="fa-solid fa-share"></i> 20k</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
